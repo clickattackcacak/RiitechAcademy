@@ -35,4 +35,23 @@ body {
 .nav-divider {
   width: 100%; }
 
+#header .carousel {
+  margin-top: 56px;
+  height: 200px; }
+  @media (min-width: 360px) {
+    #header .carousel {
+      height: 300px; } }
+#header .carousel-inner {
+  height: 100%; }
+#header .carousel-item {
+  height: 100%;
+  background-size: cover;
+  background-position: center; }
+  #header .carousel-item:nth-child(1) {
+    background-image: url("https://www.planwallpaper.com/static/images/4-Nature-Wallpapers-2014-1_cDEviqY.jpg"); }
+  #header .carousel-item:nth-child(2) {
+    background-image: url("https://wallpaperscraft.com/image/yosemite_national_park_lake_rocks_mountains_autumn_nature_96336_3840x1200.jpg"); }
+  #header .carousel-item:nth-child(3) {
+    background-image: url("https://static.pexels.com/photos/259526/pexels-photo-259526.jpeg"); }
+
 /*# sourceMappingURL=main.css.map */
