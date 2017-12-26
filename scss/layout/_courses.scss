@@ -1,0 +1,12 @@
+.course {
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.course-logo img {
+    width: 200px;
+}
+
+.course:nth-child(even) .course-card {
+   flex-direction: row-reverse;
+}

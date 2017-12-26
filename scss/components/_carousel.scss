@@ -11,6 +11,7 @@
     .carousel-inner {
         height: 100%;
     }
+    
     .carousel-item {
         height: 100%;
         background-size: cover;
@@ -19,9 +20,11 @@
         &:nth-child(1) {
             background-image: url('https://www.planwallpaper.com/static/images/4-Nature-Wallpapers-2014-1_cDEviqY.jpg');
         }
+
         &:nth-child(2) {
             background-image: url('https://wallpaperscraft.com/image/yosemite_national_park_lake_rocks_mountains_autumn_nature_96336_3840x1200.jpg');
         }
+
         &:nth-child(3) {
             background-image: url('https://static.pexels.com/photos/259526/pexels-photo-259526.jpeg');
         }
