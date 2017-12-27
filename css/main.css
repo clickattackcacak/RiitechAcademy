@@ -79,6 +79,28 @@ body {
   #nav-main li:not(:last-child) {
     margin-right: 15px; } }
 
+#nav-main .dropdown-menu {
+  min-width: auto; }
+
+@media (max-width: 991px) {
+  .dropdown-language {
+    background-color: transparent;
+    border: none; }
+    .dropdown-language.show {
+      display: flex;
+      justify-content: center; } }
+.language, .language-en, .language-sr {
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 5px 50%;
+  padding-left: 28px; }
+
+.language-en {
+  background-image: url("../img/uk.svg"); }
+
+.language-sr {
+  background-image: url("../img/serbia.svg"); }
+
 .nav-divider {
   width: 100%; }
 
