@@ -6,6 +6,11 @@
         @media(min-width: 360px) {
             height: 300px;
         }
+        
+        @media(min-width: 120px) {
+            height: 400px;
+        }
+
     }
     
     .carousel-inner {

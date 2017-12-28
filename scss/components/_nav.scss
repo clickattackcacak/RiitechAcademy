@@ -33,6 +33,7 @@
     background-size: 16px;
     background-position: 5px 50%;
     padding-left: 28px;
+    width: auto;
 }
 
 .language-en {
@@ -48,7 +49,22 @@
 .nav-divider {
     width: 100%;
 }
+
+.dropdown {
+    color: $color-nav-links;
+}
 .navigation {
-    background-color: #212121;
-    color: white;
+    background-color: $color-primary;
+    
+    .nav-link, .navbar-brand, .dropdown-item {
+        color: $color-nav-links;
+    }
+    
+    .language {
+        @media(min-width: 992px) {
+            color: $color-primary;
+        }
+    }
+
+    
 }

@@ -1,3 +1,6 @@
+#nav-main a:focus {
+  outline: none !important; }
+
 html,
 body {
   margin: 0;
@@ -104,7 +107,8 @@ body {
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: 5px 50%;
-  padding-left: 28px; }
+  padding-left: 28px;
+  width: auto; }
 
 .language-en {
   background-image: url("../img/uk.svg"); }
@@ -115,9 +119,16 @@ body {
 .nav-divider {
   width: 100%; }
 
+.dropdown {
+  color: #F0F0F0; }
+
 .navigation {
-  background-color: #212121;
-  color: white; }
+  background-color: #2D353A; }
+  .navigation .nav-link, .navigation .navbar-brand, .navigation .dropdown-item {
+    color: #F0F0F0; }
+  @media (min-width: 992px) {
+    .navigation .language, .navigation .language-en, .navigation .language-sr {
+      color: #2D353A; } }
 
 #header .carousel {
   margin-top: 56px;
@@ -125,6 +136,9 @@ body {
   @media (min-width: 360px) {
     #header .carousel {
       height: 300px; } }
+  @media (min-width: 120px) {
+    #header .carousel {
+      height: 400px; } }
 #header .carousel-inner {
   height: 100%; }
 #header .carousel-item {
@@ -137,6 +151,39 @@ body {
     background-image: url("https://wallpaperscraft.com/image/yosemite_national_park_lake_rocks_mountains_autumn_nature_96336_3840x1200.jpg"); }
   #header .carousel-item:nth-child(3) {
     background-image: url("https://static.pexels.com/photos/259526/pexels-photo-259526.jpeg"); }
+
+.hamburger-menu {
+  transition: all .2s;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block; }
+  .hamburger-menu:not(:first-child) {
+    margin-top: 5px; }
+  .hamburger-menu:first-child {
+    transform: translateX(4.4px) rotate(45deg);
+    transform-origin: 10% 10%; }
+  .hamburger-menu:nth-child(2) {
+    opacity: 0; }
+  .hamburger-menu:nth-child(3) {
+    transform: translateX(4.4px) rotate(-45deg);
+    transform-origin: 10% 90%; }
+
+#nav-main button.navbar-toggler {
+  border-color: #fff;
+  height: 40px;
+  outline: none !important; }
+#nav-main .navbar-toggler.collapsed {
+  border-color: #e4e4e4; }
+  #nav-main .navbar-toggler.collapsed .hamburger-menu {
+    background-color: #e4e4e4; }
+    #nav-main .navbar-toggler.collapsed .hamburger-menu:first-child {
+      transform: translateX(0) rotate(0); }
+    #nav-main .navbar-toggler.collapsed .hamburger-menu:nth-child(2) {
+      opacity: 1; }
+    #nav-main .navbar-toggler.collapsed .hamburger-menu:nth-child(3) {
+      transform: translateX(0) rotate(0); }
 
 .btn.btn-more {
   background-color: blue;
