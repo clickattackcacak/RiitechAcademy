@@ -86,6 +86,22 @@ body {
 
   .copyright {
     font-size: 0.9em; } }
+.calendar {
+  width: 110%; }
+
+.courseImg {
+  width: 30%;
+  height: 30%; }
+
+.courseImgDiv {
+  width: 10%; }
+
+.courseCardDiv {
+  width: 60%; }
+
+.profileBackground {
+  background-color: red; }
+
 .profileBody {
   margin-top: 56px; }
 
