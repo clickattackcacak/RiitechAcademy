@@ -53,8 +53,10 @@
 	}
 }
 
-.btn.btn-more {
-    background-color: blue;
-    color: white;
-    padding: 5px 50px;
+.btn-details {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 3px 35px;
+    text-decoration: none!important;
 }
