@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Riitech Academy </title>
 </head>
 
 <body>
@@ -15,28 +15,26 @@
 
         <header id="header">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav-main">
+            <nav class="navbar navbar-expand-lg fixed-top navigation" id="nav-main">
                 <div class="container">
                     <a class="navbar-brand" href="#">Riitech Academy</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="hamburger-menu"></span>
+                      <span class="hamburger-menu"></span>
+                      <span class="hamburger-menu"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarToggler">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Home
                                     <span class="sr-only">(current)</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Profile</a>
                             </li>
                             <hr class="nav-divider" />
                             <li class="nav-item">
@@ -44,6 +42,18 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link nav-button" href="#">Signup</a>
+                            </li>
+                            <hr class="nav-divider" />
+                            <li class="nav-item">
+                                <div class="dropdown text-center">
+                                    <a class="dropdown-toggle nav-link btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Language
+                                    </a>
+                                    <div class="dropdown-menu dropdown-language text-center" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item language language-sr" href="#">Srpski</a>
+                                        <a class="dropdown-item language language-en" href="#">English</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -73,16 +83,27 @@
         </header>
 
 
-        <section class="courses py-4">
-            <div class="container text-center">
-                <h1 class="text-center">Courses</h1>
 
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-12 course">
-                        <h2>NASLOV KURSA 1</h2>
+
+        <main id="body">
+            <section class="courses py-4">
+                <div class="container text-center">
+                    <h1 class="text-center">Courses</h1>
+                    <div class="course course-type-html">
                         <div class="row course-card">
+                            <header class="course-header container-fluid">
+                                <div class="time-container">
+                                   <img class="time mr-1" src="img/clock.svg" alt=""> 
+                                   <span class="align-middle">4 weeks</span>
+                                </div>
+                                <h2 class="text-center m-0 py-1">HTML5</h2>    
+                                <img class="book" src="img/book.svg" alt="">
+                            </header>
+                            <div class="col-lg-6 course-logo">
+                                <img src="img/html5.svg" class="py-3" />
+                            </div>
                             <div class="col-lg-6 course-description">
-                                <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                                     been the industry's standard dummy text ever since the 1500s, when an unknown printer
                                     took a galley of type and scrambled it to make a type specimen book. It has survived
                                     not only five centuries, but also the leap into electronic typesetting, remaining essentially
@@ -90,78 +111,112 @@
                                     Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
                                     including versions of Lorem Ipsum.</p>
                             </div>
+                            <footer class="course-footer html-color">
+                                <a href="#" class="btn-details">Details</a>
+                                <div class="tags">
+                                    <span class="tag">#Beginner</span>
+                                    <span class="tag">#Front-end</span>
+                                </div>    
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="course course-type-css">
+                        <div class="row course-card">
+                            <header class="course-header container-fluid">
+                                <div class="time-container">
+                                   <img class="time mr-1" src="img/clock.svg" alt=""> 
+                                   <span class="align-middle">6 weeks</span>
+                                </div>
+                                <h2 class="text-center m-0 py-1">CSS</h2>    
+                                <img class="book" src="img/book.svg" alt="">
+                            </header>
                             <div class="col-lg-6 course-logo">
-                                <img src="img/html5.svg"/>
+                                <img src="img/html5.svg" class="py-3" />
                             </div>
+                            <div class="col-lg-6 course-description">
+                                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    took a galley of type and scrambled it to make a type specimen book. It has survived
+                                    not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                                    including versions of Lorem Ipsum.</p>
+                            </div>
+                            <footer class="course-footer html-color">
+                                <a href="#" class="btn-details">Details</a>
+                                <div class="tags">
+                                    <span class="tag">#Beginner</span>
+                                    <span class="tag">#Front-end</span>
+                                </div>    
+                            </footer>
                         </div>
-                        <a class="btn btn-primary">Enroll</a>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12 course">
-                            <h2>NASLOV KURSA 1</h2>
-                            <div class="row course-card">
-                                <div class="col-lg-6 course-description">
-                                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a galley of type and scrambled it to make a type specimen book. It has survived
-                                        not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.</p>
+                    <div class="course course-type-js">
+                        <div class="row course-card">
+                            <header class="course-header container-fluid">
+                                <div class="time-container">
+                                   <img class="time mr-1" src="img/clock.svg" alt=""> 
+                                   <span class="align-middle">6 weeks</span>
                                 </div>
-                                <div class="col-lg-6 course-logo">
-                                    <img src="img/html5.svg"/>
-                                </div>
+                                <h2 class="text-center m-0 py-1">JS</h2>    
+                                <img class="book" src="img/book.svg" alt="">
+                            </header>
+                            <div class="col-lg-6 course-logo">
+                                <img src="img/html5.svg" class="py-3" />
                             </div>
-                            <a class="btn btn-primary">Enroll</a>
+                            <div class="col-lg-6 course-description">
+                                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                    took a galley of type and scrambled it to make a type specimen book. It has survived
+                                    not only five centuries, but also the leap into electronic typesetting, remaining essentially
+                                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                                    including versions of Lorem Ipsum.</p>
+                            </div>
+                            <footer class="course-footer">
+                                <a href="#" class="btn-details html-color">Details</a>
+                                <div class="tags">
+                                    <span class="tag">#Beginner</span>
+                                    <span class="tag">#Front-end</span>
+                                </div>    
+                            </footer>
                         </div>
+                    </div>
+                    
+
+
                 </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
                 <div class="row">
-                        <div class="col-12 col-md-6 col-lg-12 course">
-                            <h2>NASLOV KURSA 1</h2>
-                            <div class="row course-card">
-                                <div class="col-lg-6 course-description">
-                                    <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                        been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                        took a galley of type and scrambled it to make a type specimen book. It has survived
-                                        not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                                        including versions of Lorem Ipsum.</p>
-                                </div>
-                                <div class="col-lg-6 course-logo">
-                                    <img src="img/html5.svg"/>
-                                </div>
-                            </div>
-                            <a class="btn btn-primary">Enroll</a>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-12 course">
-                                <h2>NASLOV KURSA 1</h2>
-                                <div class="row course-card">
-                                    <div class="col-lg-6 course-description">
-                                        <p class="text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                            been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                                            took a galley of type and scrambled it to make a type specimen book. It has survived
-                                            not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                                            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                                            including versions of Lorem Ipsum.</p>
-                                    </div>
-                                    <div class="col-lg-6 course-logo">
-                                        <img src="img/html5.svg"/>
-                                    </div>
-                                </div>
-                                <a class="btn btn-primary">Enroll</a>
-                            </div>
+                    <div class="col-6">
+                        <ul class="social-networks">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="col-6 text-right align-self-center">
+                        <a href="#" class="about-link">About Us</a>
+                    </div>
+                </div>
+                <p class="text-center copyright m-0">&copy; Riitech Academy</p>
             </div>
-        </section>
-
-
-
-
-
-        <main id="body"></main>
-        <footer id="footer"></footer>
+        </footer>
     </div>
 
 
@@ -169,6 +224,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
         crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/7ef7f39f18.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
