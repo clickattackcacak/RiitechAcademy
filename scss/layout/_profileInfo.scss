@@ -1,0 +1,95 @@
+.calendar {
+    width: 90%;
+    @media (max-width: 992px){
+        width: 70%;
+    }
+    @media (max-width: 414px){
+        width: 90%;
+    }
+}
+
+.profileImage {
+    width: 70%;
+    @media (max-width: 992px){
+        width: 50%;
+    }
+    @media (max-width: 414px){
+        width: 70%;
+    }
+}
+
+.profileBackground {
+    background-color: $body-color;
+}
+
+.margin-remove {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.profile-info-centar {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.progressWidth {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.courseContent {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.courseContent span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.courseTitle {
+    margin-bottom: 0px;
+    padding: 5px 5px;
+}
+
+.profileCourseBtn {
+    border: 1px solid rgb(55, 55, 56);
+    color: rgb(154, 159, 163);
+    background-color: white;
+    width: 120px;
+}
+
+.profileCourseBtn:hover {
+    background-color: rgb(218, 218, 218);
+    color: rgb(51, 50, 50);
+}
+
+.cardMarginTop {
+    margin-top: 35px;
+}
+
+.text-profile {
+    margin-bottom: 35px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-profile button {
+    width: 100px;
+    margin: 10px;
+}
+
+.profile-header{
+    padding-top: 25px;
+}
+
+span {
+    padding-left: 10px;
+    display: inline-block;
+}
