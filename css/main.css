@@ -212,7 +212,8 @@ body {
   border: 1px solid #8a8a8a;
   width: 120px;
   background-color: #f4f4f4;
-  color: #333232; }
+  color: #333232;
+  margin-right: 15px; }
 
 .profileCourseBtn:hover {
   background-color: #9b9999;
@@ -265,6 +266,13 @@ span {
 .course:hover {
   box-shadow: 0px 3px 12px 0px #EDEEF0; }
 
+@media (max-width: 992px) {
+  .content-reverse {
+    display: flex;
+    flex-direction: column-reverse; }
+
+  .content-reverse h1 {
+    padding-top: 25px; } }
 .profileBody {
   margin-top: 56px;
   padding-top: 30px; }
