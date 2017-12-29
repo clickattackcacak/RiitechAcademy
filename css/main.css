@@ -192,14 +192,14 @@ body {
   padding: 5px 5px; }
 
 .profileCourseBtn {
-  border: 1px solid #373738;
-  color: #9a9fa3;
-  background-color: white;
-  width: 120px; }
+  border: 1px solid #8a8a8a;
+  width: 120px;
+  background-color: #f4f4f4;
+  color: #333232; }
 
 .profileCourseBtn:hover {
-  background-color: #dadada;
-  color: #333232; }
+  background-color: #9b9999;
+  color: white; }
 
 .cardMarginTop {
   margin-top: 35px; }
@@ -222,6 +222,31 @@ body {
 span {
   padding-left: 10px;
   display: inline-block; }
+
+.student-list-info {
+  border: 1px solid lightgray;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  overflow-y: scroll; }
+
+.course-list-info {
+  border: 1px solid lightgray;
+  height: 150px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px; }
+
+.border-courses {
+  background-color: white; }
+
+.course:hover {
+  box-shadow: 0px 3px 12px 0px #EDEEF0; }
 
 .profileBody {
   margin-top: 56px;
