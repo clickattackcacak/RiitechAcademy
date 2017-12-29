@@ -143,6 +143,65 @@ body {
 
   .copyright {
     font-size: 0.9em; } }
+.calendar {
+  width: 90%; }
+
+.profileBackground {
+  background-color: #EDEEF0; }
+
+.vostro {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.vostro p {
+  padding-right: 10px; }
+
+.progressWidth {
+  width: 95%;
+  margin: 0 auto; }
+
+.courseContent {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 5px; }
+
+.courseTitle {
+  margin-bottom: 0px;
+  padding: 5px 5px; }
+
+.profileCourseBtn {
+  border: 1px solid #2196F3;
+  color: #2196F3;
+  background-color: white;
+  width: 120px; }
+
+.profileCourseBtn:hover {
+  border: 1px solid white;
+  color: white !important;
+  background-color: #2196F3; }
+
+.cardMarginTop {
+  margin-top: 35px; }
+
+.profileBody {
+  margin-top: 56px; }
+
+.okvir {
+  border: 1px solid black; }
+
+.vostro p {
+  text-align: center;
+  padding-right: 10px; }
+
+.vostro {
+  margin-top: 10px; }
+
+.textInfo {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .nav-link {
   text-align: center; }
 
