@@ -124,7 +124,7 @@ body {
 #footer {
   display: flex;
   align-items: center;
-  background-color: #424242;
+  background-color: #2D353A;
   color: white; }
 
 .social-networks {
@@ -139,7 +139,9 @@ body {
   color: #fff; }
 
 .about-link {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  color: #fff !important;
+  text-decoration: none !important; }
 
 .copyright {
   position: absolute;
