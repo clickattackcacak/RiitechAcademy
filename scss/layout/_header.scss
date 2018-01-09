@@ -3,3 +3,11 @@
         max-width: 1350px;
     }
 }
+
+#header {
+    height: 48px;
+
+    @media (min-width: 992px) {
+        height: 58px;
+    }
+}
